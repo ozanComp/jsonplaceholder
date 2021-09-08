@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="photo"
+            type="com.sol.jph.model.Photo" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:strokeColor="@color/red_dark"
+        app:strokeWidth="2dp"
+        app:contentPaddingTop="10dp"
+        app:cardBackgroundColor="@color/blue_light">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/photo_img"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_user_24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{photo.title}"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/photo_img"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="postInfo"
+            type="com.sol.jph.model.PostInfo" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:strokeColor="@color/red_dark"
+        app:strokeWidth="2dp"
+        app:contentPaddingTop="10dp"
+        app:cardBackgroundColor="@color/blue_light">
+        <ProgressBar
+            android:id="@+id/ProgressBar"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+    </com.google.android.material.card.MaterialCardView>
+</layout>
