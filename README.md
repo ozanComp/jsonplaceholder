@@ -8,6 +8,7 @@ Api : https://jsonplaceholder.typicode.com
 -ViewModel and LiveData <br/>
 -Retrofit <br/>
 -Dagger 2 <br/>
+-Lifecycleservice <br/>
 -Used language Kotlin
 
 ## App overview 
