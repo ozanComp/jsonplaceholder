@@ -9,3 +9,7 @@ Api : https://jsonplaceholder.typicode.com
 -Retrofit <br/>
 -Dagger 2 <br/>
 -Used language Kotlin
+
+## App overview 
+
+https://user-images.githubusercontent.com/33511980/132510193-fc132a8e-7b20-415e-84e4-5ea511bb7e97.mp4
